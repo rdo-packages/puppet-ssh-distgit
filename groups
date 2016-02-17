@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-60143e31ab7ff603cdff17ca4b3f157e831b466c	puppet-ssh-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+f4590fb42d0782685fff5e2e119a4deb2825808b       	puppet-ssh-distgit-core
+60143e31ab7ff603cdff17ca4b3f157e831b466c        	puppet-ssh-distgit-ptl
+global:Registered-Users		Registered Users
