@@ -7,8 +7,8 @@
 
 
 Name:           puppet-ssh
-Version:        XXX
-Release:        XXX
+Version:        2.9.1
+Release:        1%{?dist}
 Summary:        Manage SSH client and server via Puppet.
 License:        Apache License, Version 2.0
 
@@ -50,4 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ssh/
 
 
 %changelog
+* Tue Sep 20 2016 Haikel Guemar <hguemar@fedoraproject.org> - 2.9.1-1
+- Newton update 2.9.1 (8564a4b939b75dc560487acd87ad6f2258b6ff1a)
+
 
