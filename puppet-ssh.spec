@@ -1,20 +1,15 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppet-ssh
-%global commit 8564a4b939b75dc560487acd87ad6f2258b6ff1a
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
 
 Name:           puppet-ssh
-Version:        XXX
-Release:        XXX
+Version:        3.0.1
+Release:        2%{?dist}
 Summary:        Manage SSH client and server via Puppet.
 License:        ASL 2.0
 
 URL:            https://github.com/saz/puppet-ssh
 
-Source0:        https://github.com/saz/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/saz/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -50,4 +45,5 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ssh/
 
 
 %changelog
-
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 3.0.1-1
+- Update to 3.0.1
