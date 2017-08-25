@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-ssh
-%global commit 8564a4b939b75dc560487acd87ad6f2258b6ff1a
+%global commit 3fb5405d021322e428777c3806c8a8bb568fc6eb
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-ssh
-Version:        XXX
-Release:        XXX
+Version:        3.0.1
+Release:        3%{?alphatag}%{?dist}
 Summary:        Manage SSH client and server via Puppet.
 License:        ASL 2.0
 
@@ -50,5 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ssh/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 3.0.1-3.3fb5405git
+- Pike update 3.0.1 (3fb5405d021322e428777c3806c8a8bb568fc6eb)
 
 
