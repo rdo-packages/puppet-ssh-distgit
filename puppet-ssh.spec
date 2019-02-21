@@ -52,3 +52,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ssh/
 %changelog
 
 
+# REMOVEME: error caused by commit https://github.com/saz/puppet-ssh/commit/744668072a07e0881fcf629036cf481d40ab862b
