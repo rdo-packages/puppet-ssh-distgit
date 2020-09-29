@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-ssh
-%global commit 8564a4b939b75dc560487acd87ad6f2258b6ff1a
+%global commit 6e0f430034cf349c8b613d16cf9e3a52f63183e0
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-ssh
-Version:        XXX
-Release:        XXX
+Version:        6.2.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manage SSH client and server via Puppet.
 License:        ASL 2.0
 
@@ -50,5 +50,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ssh/
 
 
 %changelog
+* Tue Sep 29 2020 RDO <dev@lists.rdoproject.org> 6.2.0-1.6e0f430git
+- Update to post 6.2.0 (6e0f430034cf349c8b613d16cf9e3a52f63183e0)
+
 
 
