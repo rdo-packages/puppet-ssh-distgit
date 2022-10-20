@@ -7,7 +7,7 @@
 
 
 Name:           puppet-ssh
-Version:        XXX
+Version:        9.0.0
 Release:        1%{?alphatag}%{?dist}
 Summary:        Manage SSH client and server via Puppet.
 License:        ASL 2.0
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ssh/
 
 
 %changelog
+* Thu Oct 20 2022 RDO <dev@lists.rdoproject.org> 9.0.0-1.ec47d72git
+- Update to post 9.0.0 (ec47d72407a608c56743cf5a7e7b09056062ed7b)
+
 * Mon Oct 03 2022 RDO <dev@lists.rdoproject.org> 9.0.0-1.ec47d72git
 - Update to post 9.0.0 (ec47d72407a608c56743cf5a7e7b09056062ed7b)
 
